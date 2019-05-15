@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="27-03-2019 Fabrica desnecessaria mas util">
+  <ClassDiagramComponents>
+    <Class name="BemCasadoPrototype" package="FabricadeBBD" visibility="public" xPosition="1993.0" yPosition="516.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="protected">
+          <Argument type="BemCasadoPrototype" name="bemCasadoPrototype"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="exibirinfo" returnType="String" visibility="public"/>
+        <Method name="clonar" returnType="DocesPrototype" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Biscoito" package="FabricadeBBD" visibility="public" isAbstract="true" xPosition="904.0" yPosition="671.0">
+      <Fields>
+        <Field name="sabor" type="String" visibility="public"/>
+        <Field name="tipo" type="String" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="BoloBrigadeiro" package="FabricadeBBD" visibility="public" xPosition="769.0" yPosition="430.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="exibrBoloFesta" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="BoloChocolate" package="FabricadeBBD" visibility="public" xPosition="915.0" yPosition="14.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="criaBoloSimples" returnType="bolosimples" visibility="public"/>
+        <Method name="criarBoloFesta" returnType="bolofesta" visibility="public"/>
+        <Method name="criarBoloSFarinha" returnType="bolosemfarinha" visibility="public"/>
+        <Method name="criarBoloAnjo" returnType="boloanjo" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="BoloChocolateAnjo" package="FabricadeBBD" visibility="public" xPosition="1505.0" yPosition="414.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="exibirBoloAnjo" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="BoloChocolateComum" package="FabricadeBBD" visibility="public" xPosition="1182.0" yPosition="414.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="exibirBoloSimples" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="BoloChocolateSFarinha" package="FabricadeBBD" visibility="public" xPosition="477.0" yPosition="414.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="exibirBoloSFarinha" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Cracker" package="FabricadeBBD" visibility="public" xPosition="1062.0" yPosition="918.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="sabor"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="CupCakePrototype" package="FabricadeBBD" visibility="public" xPosition="1936.0" yPosition="861.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="protected">
+          <Argument type="CupCakePrototype" name="cupCakePrototype"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="exibirinfo" returnType="String" visibility="public"/>
+        <Method name="clonar" returnType="DocesPrototype" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DocesPrototype" package="FabricadeBBD" visibility="public" isAbstract="true" xPosition="1737.0" yPosition="516.0">
+      <Fields>
+        <Field name="sabor" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="exibirinfo" returnType="String" visibility="public" isAbstract="true"/>
+        <Method name="clonar" returnType="DocesPrototype" visibility="public" isAbstract="true"/>
+        <Method name="getSabor" returnType="String" visibility="public"/>
+        <Method name="setSabor" returnType="void" visibility="public">
+          <Argument type="String" name="sabor"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FactoryBiscoito" package="FabricadeBBD" visibility="public" xPosition="542.0" yPosition="671.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getBiscoito" returnType="Biscoito" visibility="public">
+          <Argument type="String" name="sabor"/>
+          <Argument type="String" name="tipo"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FrutasPrototype" package="FabricadeBBD" visibility="public" xPosition="1268.0" yPosition="861.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="protected">
+          <Argument type="FrutasPrototype" name="frutasPrototype"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="exibirinfo" returnType="String" visibility="public"/>
+        <Method name="clonar" returnType="DocesPrototype" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="GeladoPrototype" package="FabricadeBBD" visibility="public" xPosition="1605.0" yPosition="861.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="protected">
+          <Argument type="GeladoPrototype" name="geladoPrototype"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="exibirinfo" returnType="String" visibility="public"/>
+        <Method name="clonar" returnType="DocesPrototype" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Lojinha" package="FabricadeBBD" visibility="public" xPosition="284.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Maisena" package="FabricadeBBD" visibility="public" xPosition="875.0" yPosition="918.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="sabor"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Recheado" package="FabricadeBBD" visibility="public" xPosition="511.0" yPosition="929.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="sabor"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Wafer" package="FabricadeBBD" visibility="public" xPosition="694.0" yPosition="918.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="sabor"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Interface name="Atendimento" package="FabricadeBBD" visibility="public" xPosition="32.0" yPosition="20.0">
+      <Methods>
+        <Method name="inicioAtendimento" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="FimAtendimento" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="primeiraPerguntaBolo" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="primeiraPerguntaBiscoito" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="primeiraPerguntaDoce" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="boloComun" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="boloFesta" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="boloAnjo" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="boloSemfarinha" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="biscoitoWafer" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="biscoitoMaisena" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="biscoitoRechado" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="biscoitoCracker" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="doceCupCake" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="doceBemCasado" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="doceGelado" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="doceFrutas" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="logicaOne" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="logicaBolo" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="logicaBiscoito" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="logicaDoce" returnType="void" visibility="public" isStatic="true"/>
+      </Methods>
+    </Interface>
+    <Interface name="boloanjo" package="FabricadeBBD" visibility="public" xPosition="1505.0" yPosition="261.0">
+      <Methods>
+        <Method name="exibirBoloAnjo" returnType="void" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Interface name="bolofesta" package="FabricadeBBD" visibility="public" xPosition="769.0" yPosition="261.0">
+      <Methods>
+        <Method name="exibrBoloFesta" returnType="void" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Interface name="bolosemfarinha" package="FabricadeBBD" visibility="public" xPosition="477.0" yPosition="261.0">
+      <Methods>
+        <Method name="exibirBoloSFarinha" returnType="void" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Interface name="bolosimples" package="FabricadeBBD" visibility="public" xPosition="1182.0" yPosition="261.0">
+      <Methods>
+        <Method name="exibirBoloSimples" returnType="void" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Interface name="FabricaBolos" package="FabricadeBBD" visibility="public" xPosition="1532.0" yPosition="14.0">
+      <Methods>
+        <Method name="criaBoloSimples" returnType="bolosimples" visibility="package"/>
+        <Method name="criarBoloFesta" returnType="bolofesta" visibility="package"/>
+        <Method name="criarBoloSFarinha" returnType="bolosemfarinha" visibility="package"/>
+        <Method name="criarBoloAnjo" returnType="boloanjo" visibility="package"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="FabricadeBBD.FabricaBolos" target="FabricadeBBD.bolosimples" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="FabricadeBBD.Wafer" target="FabricadeBBD.Biscoito"/>
+    <IsRelation name="is" source="FabricadeBBD.Maisena" target="FabricadeBBD.Biscoito"/>
+    <UseRelation source="FabricadeBBD.BoloChocolate" target="FabricadeBBD.bolosimples" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="FabricadeBBD.FrutasPrototype" target="FabricadeBBD.DocesPrototype"/>
+    <IsRelation name="is" source="FabricadeBBD.BemCasadoPrototype" target="FabricadeBBD.DocesPrototype"/>
+    <IsRelation name="is" source="FabricadeBBD.Cracker" target="FabricadeBBD.Biscoito"/>
+    <UseRelation source="FabricadeBBD.BoloChocolate" target="FabricadeBBD.boloanjo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="FabricadeBBD.FabricaBolos" target="FabricadeBBD.boloanjo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="FabricadeBBD.BoloChocolateAnjo" target="FabricadeBBD.boloanjo"/>
+    <UseRelation source="FabricadeBBD.BoloChocolate" target="FabricadeBBD.bolofesta" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="FabricadeBBD.BoloBrigadeiro" target="FabricadeBBD.bolofesta"/>
+    <UseRelation source="FabricadeBBD.FactoryBiscoito" target="FabricadeBBD.Biscoito" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="FabricadeBBD.BoloChocolate" target="FabricadeBBD.bolosemfarinha" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="FabricadeBBD.FrutasPrototype" target="FabricadeBBD.DocesPrototype" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="FabricadeBBD.Recheado" target="FabricadeBBD.Biscoito"/>
+    <UseRelation source="FabricadeBBD.DocesPrototype" target="FabricadeBBD.DocesPrototype" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="FabricadeBBD.CupCakePrototype" target="FabricadeBBD.DocesPrototype" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="FabricadeBBD.BoloChocolateSFarinha" target="FabricadeBBD.bolosemfarinha"/>
+    <IsRelation name="is" source="FabricadeBBD.GeladoPrototype" target="FabricadeBBD.DocesPrototype"/>
+    <IsRelation name="is" source="FabricadeBBD.CupCakePrototype" target="FabricadeBBD.DocesPrototype"/>
+    <UseRelation source="FabricadeBBD.GeladoPrototype" target="FabricadeBBD.DocesPrototype" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="FabricadeBBD.FabricaBolos" target="FabricadeBBD.bolofesta" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="FabricadeBBD.FabricaBolos" target="FabricadeBBD.bolosemfarinha" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="FabricadeBBD.BemCasadoPrototype" target="FabricadeBBD.DocesPrototype" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="FabricadeBBD.BoloChocolate" target="FabricadeBBD.FabricaBolos"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="FabricadeBBD.BoloChocolateComum" target="FabricadeBBD.bolosimples"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
